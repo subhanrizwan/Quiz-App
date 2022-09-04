@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>quiz application </title>
+    <!-- <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.min.css'></link> 
+     --><script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="courses.css">
 </head>
@@ -108,57 +110,57 @@
       <!-- start quiz question -->
 <div id="quiz-app">
 
-  <div class="card" id="first-card">
+  <div class="card1" id="first-card">
     <div class="card-header">
       <h5>Q1) Inside which HTML element do we put the JavaScript?</h5>
     </div>
-    <div class="card-body" >
-     <input type="radio" name="question1" > Js <br><br>
-     <input type="radio" name="question1" >JavaScript<br><br>
-     <input type="radio" name="question1" >Scripting<br><br>
-     <input type="radio" name="question1" id="correct-ans1" > Script<br><br>
+    <div class="card-body1" >
+     <input type="radio" name="question1" > <b>js</b> <br><br>
+     <input type="radio" name="question1" > <b>JavaScript </b> <br><br>
+     <input type="radio" name="question1" > <b>Scripting</b>    <br><br>
+     <input type="radio" name="question1" id="correct-ans1" > <b>Script</b><br><br>
      <button onclick="nextquest()">Next</button>
     </div>
   </div>
 
 
 
-   <div class="card" id="sec-card">
+   <div class="card1" id="sec-card">
     <div class="card-header">
      <h5>Q2) Where is the correct place to insert a JavaScript?<h5>
     </div>
-    <div class="card-body" >
-     <input type="radio" name="question1"  id="correct-ans2"> Both the head section and the body section are correct <br><br>
-     <input type="radio" name="question1"> The <head> section <br><br>
-     <input type="radio" name="question1" >The <body> section<br><br>
-     <input type="radio" name="question1" >None of these<br><br>
+    <div class="card-body1" >
+     <input type="radio" name="question1"  id="correct-ans2"><b> Both the head section and the body section are correct</b> <br><br>
+     <input type="radio" name="question1"> <b>The <head> section</b> <br><br>
+     <input type="radio" name="question1" ><b>The <body> section</b><br><br>
+     <input type="radio" name="question1" ><b>None of these</b><br><br>
      <button onclick="nextquest2()">Next</button>
     </div>
 
     
   
   </div>
-  <div class="card" id="third-card">
+  <div class="card1" id="third-card">
     <div class="card-header">
       <h5>Q3) The external JavaScript file must contain the script tag?<h5>
     </div>
-    <div class="card-body" >
-     <input type="radio" name="question1" >True<br><br>
-     <input type="radio" name="question1" id="correct-ans3">False<br><br>
+    <div class="card-body1" >
+     <input type="radio" name="question1" ><b>True</b><br><br>
+     <input type="radio" name="question1" id="correct-ans3"><b>False</b><br><br>
      
      <button onclick="nextquest3()">Next</button>
     </div>
 </div>
 
-<div class="card" id="fourth-card">
+<div class="card1" id="fourth-card">
   <div class="card-header">
     <h5>Q4)How do you write "Hello World" in an alert box?<h5>
   </div>
-  <div class="card-body" >
-   <input type="radio" name="question1" > alertBox("Hello World");<br><br>
-   <input type="radio" name="question1" > msg("Hello World");<br> <br>
-   <input type="radio" name="question1" > msgBox("Hello World")<br><br>
-   <input type="radio" name="question1" id="correct-ans4"> alert("Hello World");<br><br>
+  <div class="card-body1" >
+   <input type="radio" name="question1" > <b>alertBox("Hello World");</b><br><br>
+   <input type="radio" name="question1" > <b>msg("Hello World");</b><br> <br>
+   <input type="radio" name="question1" > <b>msgBox("Hello World")</b><br><br>
+   <input type="radio" name="question1" id="correct-ans4"> <b>alert("Hello World");</b><br><br>
    <button  onclick="submit()">Submit</button>
   </div>
 </div> 
@@ -167,8 +169,22 @@
 
       <!-- after submit -->
 
-      <div id="result-box">
-        subhan
+      <!-- <div id="">
+
+        <div class="card" style="width: 18rem;" id="result-box"> -->
+          <!-- <ul class="list-group list-group-flush">
+            <li class="list-group-item">An item</li>
+            <li class="list-group-item">A second item</li>
+            <li class="list-group-item">A third item</li>
+          </ul> -->
+        <!-- </div> -->
+
+
+
+
+
+        <!--  -->
+        
       </div>
      
 </div>
@@ -200,7 +216,7 @@
  
 </body>
 <script src="quest-quiz.js"></script>
-
+<!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.all.min.js"></script> -->
 </html>
 
 
@@ -224,13 +240,7 @@
 
 
 
- <!-- <div class="card" style="width: 18rem;" id="result-box">
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item">An item</li>
-          <li class="list-group-item">A second item</li>
-          <li class="list-group-item">A third item</li>
-        </ul>
-      </div> -->
+ <!--  -->
 
 
 <!-- <div class="container mt-sm-5 my-1"  >

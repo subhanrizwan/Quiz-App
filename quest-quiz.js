@@ -24,14 +24,23 @@ seccard.style.display="block"
 
 var firstcard = document.getElementById('first-card')
 firstcard.style.display="none"
-}else{alert("please ans the question")}
+}else if (ans_1 !== ans_1.checked){
+  // score--;
+  // alert("yout score is" + " " + score )
+var res=document.getElementById('sec-card')
+   res.style.display="block"
+
+   var firstcard = document.getElementById('first-card')
+   firstcard.style.display="none"
+
+}
 
   }
 
 function nextquest2(){
   var ans_2 = document.getElementById('correct-ans2')
 
-  if(ans_2.checked){
+  if(ans_2.checked ){
     score++;
      console.log(score);
 
@@ -40,7 +49,16 @@ function nextquest2(){
 
      var firstcard = document.getElementById('sec-card')
      firstcard.style.display="none"
-  }else{alert("please ans the question")}
+  }else if (ans_2 !== ans_2.checked){
+    // score--;
+    // alert("yout score is" + " " + score )
+  var res=document.getElementById('third-card')
+     res.style.display="block"
+ 
+     var firstcard = document.getElementById('sec-card')
+     firstcard.style.display="none"
+
+ }
 } 
 
 function nextquest3(){
@@ -54,22 +72,46 @@ function nextquest3(){
  
      var firstcard = document.getElementById('third-card')
      firstcard.style.display="none"
- } else{alert("please ans the question")}
+ } else if (ans_3 !== ans_3.checked){
+  // score--;
+  //alert("yout score is" + " " + score )//
+var res=document.getElementById('fourth-card')
+   res.style.display="block"
+
+   var firstcard = document.getElementById('third-card')
+   firstcard.style.display="none"
+
+}
   
 } 
 
 function submit(){
   var ans_4 = document.getElementById('correct-ans4')
-  if(ans_4.checked){
+  if(ans_4=== ans_4.checked){
     score++;
-    console.log(score);
+    swal("Your Score is"+" " +score, {
+  buttons: ["Restart",javascript(), "Ok"],
+});
 
-     var res=document.getElementById('result-box')
-     res.style.display="block"
+    // alert("your score" + " " + score)
+    // console.log(score);
+    // var res=document.getElementById('result-box')
+    // res.style.display="block"
+    
+    // var firstcard = document.getElementById('fourth-card')
+    // firstcard.style.display="none"
+  } else if (ans_4 !== ans_4.checked){
+    // score--;
+    swal("Your Score is"+score, {
+      buttons: ["Restart", "Ok"],
+    });
+  // var res=document.getElementById('result-box')
+  //    res.style.display="block"
  
-     var firstcard = document.getElementById('fourth-card')
-     firstcard.style.display="none"
- } else{alert("please ans the question")}
+  //    var firstcard = document.getElementById('fourth-card')
+  //    firstcard.style.display="none"
+
+ }
 }
 
 
