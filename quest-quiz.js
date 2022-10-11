@@ -86,10 +86,10 @@ var res=document.getElementById('fourth-card')
 } 
 
 function submit(){
-  var ans_4 = document.getElementById('correct-ans4')
-  if(ans_4=== ans_4.checked){
+  var ans4 = document.getElementById('correct-ans4')
+  if( ans4.checked){
     score++;
-    swal("Your Score is"+" " +score, {
+    alert("Your Score is"+" " +score, {
   buttons: ["Restart",javascript(), "Ok"],
 });
 
@@ -100,9 +100,9 @@ function submit(){
     
     // var firstcard = document.getElementById('fourth-card')
     // firstcard.style.display="none"
-  } else if (ans_4 !== ans_4.checked){
+  } else if (! ans4.checked){
     // score--;
-    swal("Your Score is"+score, {
+    alert("Your Score is"+score, {
       buttons: ["Restart", "Ok"],
     });
   // var res=document.getElementById('result-box')
