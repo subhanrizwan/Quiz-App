@@ -17,8 +17,15 @@ function final_login(){
 }
 
 function creat_acc(){
-    event.preventDefault();
-    window.location ="creatacc.html"
+    // event.preventDefault();
+    var lgn = document.getElementById('crt_acc');
+    lgn.style.display='block'
+    var crt = document.getElementById('creat')
+    crt.style.display='none'
+
+
+    
+// window.location ="creatacc.html"
     // btn.remove
 }
 function login(){
@@ -41,7 +48,7 @@ function login(){
     if( email){
      if(pass){
      }
-      window.location = 'quiz-login.html'
+      window.location = 'quiz-login.html' 
     }else{alert("email is required")}
   }
   
